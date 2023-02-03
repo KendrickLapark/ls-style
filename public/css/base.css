@@ -1,0 +1,380 @@
+body {
+    background-color: #ffffff;
+    font-family: "Lato", Sans-serif;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.botones {
+    margin-right: 30px;
+    width: 25%;
+    text-align: center;
+    padding: 10px 40px;
+    margin-right: 30px;
+}
+
+.botonesAB {
+    background: #ffffff;
+    border: 2px solid #004a98;
+    color: #004a98;
+}
+
+button#registerSubmitButton,
+button#recoverSubmitButton,
+button#loginSubmitButton,
+.botonesBA {
+    background: #004a98;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.redMark {
+    color: red;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.sectionTitle {
+    color: #004a98;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.formLink {
+    font-size: 14px;
+    color: #01b6ed;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.formSubmitError {
+    background-color: #D46A6A;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid #000000;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+/* Hide Elements onLoad */
+.formError {
+    display: none;
+    color: red;
+}
+
+/* End Hide Elements onLoad */
+
+/* Header */
+#divHeader {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 40px;
+    padding-right: 25px;
+    padding-bottom: 35px;
+    box-shadow: 0 0 5px 5px #004a98;
+}
+
+#logo {
+    width: 20%;
+}
+
+#mainMenu {
+    width: 60%;
+}
+
+div#mainMenu ul li {
+    float: right;
+}
+
+@media only screen and (max-width: 950px) {
+
+    #logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    #mainMenu {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    div#mainMenu ul {
+        display: table;
+        margin: 0 auto;
+        width: 100%;
+
+    }
+
+    div#mainMenu ul li {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+/* End Header */
+
+/* Footer */
+#divFooter {
+    background-color: #004a98;
+    min-height: 300px;
+}
+
+#contentFooter {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.eachColFoot {
+    width: 23%;
+}
+
+div.eachColFoot p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+div.eachColFoot p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+div.titleFoot,
+div.eachColFoot p a {
+    color: #ffffff;
+}
+
+div.titleFoot {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 950px) {
+    .eachColFoot {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+/* End Footer */
+
+/* Slider */
+#sliderHome {
+    width: 100%;
+}
+
+/* End Slider */
+
+/* Main Home */
+
+
+/******************************************************************/
+#contentDiv {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rowDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2rem;
+    margin-bottom: 10px;
+
+}
+
+.eachCell {
+    width: 40%;
+}
+
+.eachCell.withText {
+    padding-top: 100px !important;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    padding-top: 60px;
+
+}
+
+.eachCell.withText .header {
+    font-size: 3rem;
+}
+
+.eachCell.withText p {
+    line-height: 25px;
+}
+
+.eachCell img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+    .rowDiv {
+        flex-direction: column;
+    }
+
+    .rowDiv:nth-child(even) {
+        background-color: red;
+        flex-direction: column-reverse;
+    }
+
+    .eachCell {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+}
+
+/******************************************************************/
+
+/* End Main Home */
+
+/* Forms */
+select,
+input,
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 220px;
+    font-size: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #666666;
+}
+
+input[type='checkbox'] {
+    width: 10px;
+}
+
+/* End Forms */
+
+/* Login Form */
+#loginContainer {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 53.6vh;
+}
+
+/* End Login Form */
+
+/* Register */
+#registerContainer {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#registerSheetOne,
+#registerSheetTwo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.stepRegister {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.RegisterContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.eachRegisterElement {
+    width: 30%;
+    height: 100px;
+}
+
+.eachLongRegisterElement {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 2%;
+}
+
+#registerAuth.RegisterContainer {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+@media only screen and (max-width: 950px) {
+    .eachRegisterElement {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    .eachLongRegisterElement {
+        margin-bottom: 10%;
+    }
+
+    #nextRegisterFirst {
+        margin-top: 5rem;
+    }
+
+
+}
+
+#backRegisterFirst,
+#nextRegisterFirst,
+#backRegisterSecond,
+#nextRegisterSecond {
+    cursor: pointer;
+}
+
+/* End Register */
+
+/* Recover Password */
+#recoverPassContainer {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 53.6vh;
+}
+
+/* End Recover Password */
+
+/* Error webs */
+.errorContainer {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 53.6vh;
+}
+
+/* End Error webs */
